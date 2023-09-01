@@ -82,7 +82,7 @@ export function App() {
                   {
                     shownPokemon.varieties.map((variation) => {
                       return (
-                        <li>{variation.pokemon.name}</li>
+                        <li key={Math.random() * 1000000}>{variation.pokemon.name}</li>
                       )
                     })
                   }
